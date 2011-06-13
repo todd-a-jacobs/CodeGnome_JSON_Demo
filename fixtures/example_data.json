@@ -1,0 +1,16 @@
+{
+    "programmer": {
+        "attributes": [
+            "bright", 
+            "friendly", 
+            "outgoing", 
+            "knowledgeable", 
+            "personable", 
+            "experienced", 
+            "reliable"
+        ], 
+        "first_name": "Todd", 
+        "last_name": "Jacobs", 
+        "company": "CodeGnome Consulting, LTD"
+    }
+}

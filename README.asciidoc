@@ -1,0 +1,39 @@
+= CodeGnome JSON Demo
+Todd A. Jacobs <codegnome.consulting+json_demo@gmail.com>
+
+== Purpose
+
+This is not actually designed to be useful software, although if you
+_do_ find it useful, you are certainly welcome to use it under the terms
+of the GNU General Public License, Version 3 or later (see the
+link:LICENSE[] file for details.)
+
+The purpose of this demo is two-fold:
+
+. Provide a basic example of how easy it is to consume JSON data using
+Python.
+
+. Provide an example of how easy test-driven development with Python can
+be, especially with some of the newer assertions available in more
+recent versions. 
+
+== Installation Notes
+
+The code was built and tested on Python 2.7.1, and lightly tested
+against Python 3.2 as well. If it works for you on any other Python
+version, great! If not, feel free to submit a compatibility patch that
+doesn't break Ubuntu's currently-supported Python versions.
+
+== Running the Code on *nix Systems
+
+.Running the Demo
+----------------------------------------------------------------------
+cd CodeGnome_JSON_Demo
+./CodeGnome_JSON_Demo.py
+----------------------------------------------------------------------
+
+.Executing the Unit Tests
+----------------------------------------------------------------------
+cd CodeGnome_JSON_Demo/unittest
+./run_test.sh
+----------------------------------------------------------------------
