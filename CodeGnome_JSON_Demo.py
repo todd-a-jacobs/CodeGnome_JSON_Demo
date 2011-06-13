@@ -72,5 +72,13 @@ if __name__ == '__main__':
     else:
         sys.stderr.write('Fatal Error: No JSON file found.\n')
         sys.exit(1)
+
+    print('Raw JSON Input')
+    print('--------------')
+    with open(filename) as f:
+        print(f.read())
+
+    print('JSON Data After Parsing')
+    print('-----------------------')
     p = Programmer(filename)
     p.present_narrative()
