@@ -40,7 +40,7 @@ class Programmer:
     def remove_comma_after_conjunctions(self, string):
         return re.sub( '(and|or)[,]', '\\1', string )
 
-    def present(self):
+    def present_narrative(self):
         """Present the JSON data in a narrative format."""
         # Parse the JSON into some useful chunks.
         programmer_info = self.attributes['programmer']
@@ -73,4 +73,4 @@ if __name__ == '__main__':
         sys.stderr.write('Fatal Error: No JSON file found.\n')
         sys.exit(1)
     p = Programmer(filename)
-    p.present()
+    p.present_narrative()

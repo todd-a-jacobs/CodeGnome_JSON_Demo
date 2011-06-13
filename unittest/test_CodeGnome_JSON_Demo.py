@@ -43,7 +43,7 @@ class CodeGnome_JSON_Demo(unittest.TestCase):
     def test_load_file_returns_dictionary(self):
         self.assertIsInstance(self.programmer.attributes, dict)
 
-    def test_output_of_present_method(self):
+    def test_output_of_present_narrative_method(self):
         """
         This test is particularly brittle, but also the most important
         behavioral test. In short, are we getting the expected output from the
@@ -59,7 +59,8 @@ friendly, outgoing, knowledgeable, personable, experienced, and reliable."""
         # Provide a diff in the test results between expected output and the
         # actual results. This is probably more useful than a general failure
         # message or a manual diff.
-        self.assertMultiLineEqual(self.programmer.present(), expected_result)
+        self.assertMultiLineEqual(self.programmer.present_narrative(),
+                                  expected_result)
         # This is a foolproof way to restore standard out without having to save
         # it away first. Resetting standard output is essential if one expects
         # to add more tests.
