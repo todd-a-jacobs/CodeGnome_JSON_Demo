@@ -33,7 +33,7 @@ class CodeGnome_JSON_Demo(unittest.TestCase):
         programmer = Programmer()
         self.assertIsInstance(programmer, Programmer)
 
-    def test_loading_non_json_files(self):
+    def test_loading_non_json_files_should_raise_exception(self):
         with self.assertRaises(ValueError):
             programmer = Programmer('/etc/passwd')
 
